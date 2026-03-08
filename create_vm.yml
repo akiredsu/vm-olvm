@@ -13,9 +13,3 @@
           username: admin@internal
           password: welcome1
           insecure: true
-        name: vm-from-awx
-        cluster: OLVM-MBT
-        template: T-1
-        memory: 4GiB
-        cpu_cores: 2
-        state: running
