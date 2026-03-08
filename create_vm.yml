@@ -1,0 +1,21 @@
+---
+- name: Create VM on OLVM
+  hosts: localhost
+  connection: local
+  gather_facts: no
+
+  tasks:
+
+    - name: Create VM in OLVM
+      ovirt.ovirt.ovirt_vm:
+        auth:
+          url: https://manager.mbt.com/ovirt-engine/
+          username: admin
+          password: welcome1
+          insecure: true
+        name: vm-from-awx
+        cluster: Default
+        template: Blank
+        memory: 4GiB
+        cpu_cores: 2
+        state: running
