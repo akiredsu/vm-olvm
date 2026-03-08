@@ -9,7 +9,7 @@
     - name: Create VM in OLVM
       ovirt.ovirt.ovirt_vm:
         auth:
-          url: https://manager.mbt.com/ovirt-engine/
+          url: https://manager.mbt.com/ovirt-engine/api
           username: admin
           password: welcome1
           insecure: true
