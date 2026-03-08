@@ -18,5 +18,5 @@
         cluster: OLVM-MBT
         template: T-1
         memory: 4GiB
-        cpu_cores: 4
+        cpu_cores: 2
         state: running
