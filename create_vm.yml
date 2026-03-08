@@ -10,7 +10,7 @@
       ovirt.ovirt.ovirt_vm:
         auth:
           url: https://manager.mbt.com/ovirt-engine/api
-          username: admin
+          username: admin@internal
           password: welcome1
           insecure: true
         name: vm-from-awx
