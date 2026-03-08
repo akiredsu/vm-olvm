@@ -14,7 +14,7 @@
           password: welcome1
           insecure: true
         name: vm-from-awx
-        cluster: Default
+        cluster: OLVM-MBT
         template: Blank
         memory: 4GiB
         cpu_cores: 2
