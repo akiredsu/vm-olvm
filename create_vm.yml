@@ -14,7 +14,7 @@
           password: welcome1
           insecure: true
 
-        name: vm-from-awx
+        name: vm-workshop
         cluster: OLVM-MBT
         template: T-1
         memory: 4GiB
