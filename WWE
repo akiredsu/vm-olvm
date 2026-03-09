@@ -1,0 +1,15 @@
+---
+- name: Create VM on OLVM
+  hosts: localhost
+  connection: local
+  gather_facts: no
+
+  tasks:
+
+    - name: Create VM in OLVM
+      ovirt.ovirt.ovirt_vm:
+        auth:
+          url: https://manager.mbt.com/ovirt-engine/api
+          username: admin@internal
+          password: welcome1
+          insecure: true
