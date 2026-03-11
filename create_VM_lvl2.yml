@@ -1,0 +1,27 @@
+---
+- name: Create VM on OLVM
+  hosts: localhost
+  connection: local
+  gather_facts: no
+
+  vars:
+    ovirt_url: "https://manager.mbt.com/ovirt-engine/api"
+    ovirt_user: "admin@internal"
+    ovirt_pass: "welcome1"
+
+  tasks:
+
+    - name: Create VM in OLVM
+      ovirt.ovirt.ovirt_vm:
+        auth:
+          url: "{{ ovirt_url }}"
+          username: "{{ ovirt_user }}"
+          password: "{{ ovirt_pass }}"
+          insecure: true
+
+        name: "{{ vm_name }}"
+        cluster: OLVM-MBT
+        template: T-1
+        memory: "{{ vm_memory }}"
+        cpu_cores: "{{ vm_cpu }}"
+        state: running
